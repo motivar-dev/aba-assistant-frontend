@@ -7391,14 +7391,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! @angular/common */ 60316);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! @angular/forms */ 34456);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! @angular/common/http */ 46443);
-/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ngx-bootstrap/modal */ 2457);
-/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ 54195);
-/* harmony import */ var ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ngx-bootstrap/collapse */ 18751);
-/* harmony import */ var ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! ngx-bootstrap/tabs */ 75119);
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ngx-pagination */ 82423);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! @angular/core */ 37580);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! @angular/common */ 60316);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! @angular/forms */ 34456);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! @angular/common/http */ 46443);
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ngx-bootstrap/modal */ 2457);
+/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ 54195);
+/* harmony import */ var ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! ngx-bootstrap/collapse */ 18751);
+/* harmony import */ var ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ngx-bootstrap/tabs */ 75119);
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_150__ = __webpack_require__(/*! ngx-pagination */ 82423);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 94114);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 20092);
 /* harmony import */ var _shared_service_proxies_service_proxy_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shared/service-proxies/service-proxy.module */ 7707);
@@ -7540,7 +7541,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_sidebar_user_panel_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./layout/sidebar-user-panel.component */ 56319);
 /* harmony import */ var _layout_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./layout/sidebar-menu.component */ 82428);
 /* harmony import */ var _utils_select_habilidade_dialog_single_selector_dialog_component__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./utils/select-habilidade-dialog/single-selector-dialog.component */ 94806);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! @angular/core */ 37580);
+/* harmony import */ var _utils_globalErrorHandler__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./utils/globalErrorHandler */ 64887);
+
 
 
 
@@ -7720,19 +7722,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class AppModule {
   static #_ = (() => this.ɵfac = function AppModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || AppModule)();
   })();
-  static #_2 = (() => this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_141__["ɵɵdefineNgModule"]({
+  static #_2 = (() => this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_142__["ɵɵdefineNgModule"]({
     type: AppModule
   }))();
-  static #_3 = (() => this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_141__["ɵɵdefineInjector"]({
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_142__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_143__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_143__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_144__.HttpClientModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_144__.HttpClientJsonpModule, ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_145__.ModalModule.forChild(), ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_146__.BsDropdownModule, ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_147__.CollapseModule, ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_148__.TabsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _shared_service_proxies_service_proxy_module__WEBPACK_IMPORTED_MODULE_2__.ServiceProxyModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule, ngx_pagination__WEBPACK_IMPORTED_MODULE_149__.NgxPaginationModule]
+  static #_3 = (() => this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_142__["ɵɵdefineInjector"]({
+    providers: [{
+      provide: _angular_core__WEBPACK_IMPORTED_MODULE_142__.ErrorHandler,
+      useClass: _utils_globalErrorHandler__WEBPACK_IMPORTED_MODULE_141__.GlobalErrorHandler
+    }],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_143__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_144__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_144__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_145__.HttpClientModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_145__.HttpClientJsonpModule, ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_146__.ModalModule.forChild(), ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_147__.BsDropdownModule, ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_148__.CollapseModule, ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_149__.TabsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _shared_service_proxies_service_proxy_module__WEBPACK_IMPORTED_MODULE_2__.ServiceProxyModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule, ngx_pagination__WEBPACK_IMPORTED_MODULE_150__.NgxPaginationModule]
   }))();
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_141__["ɵɵsetNgModuleScope"](AppModule, {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_142__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _app_home_home_component__WEBPACK_IMPORTED_MODULE_4__.HomeComponent, _app_about_about_component__WEBPACK_IMPORTED_MODULE_5__.AboutComponent,
     // tenants
     _app_tenants_tenants_component__WEBPACK_IMPORTED_MODULE_6__.TenantsComponent, _tenants_create_tenant_create_tenant_dialog_component__WEBPACK_IMPORTED_MODULE_7__.CreateTenantDialogComponent, _tenants_edit_tenant_edit_tenant_dialog_component__WEBPACK_IMPORTED_MODULE_8__.EditTenantDialogComponent,
@@ -7780,7 +7787,7 @@ class AppModule {
     _layout_header_component__WEBPACK_IMPORTED_MODULE_131__.HeaderComponent, _layout_header_left_navbar_component__WEBPACK_IMPORTED_MODULE_132__.HeaderLeftNavbarComponent, _layout_header_language_menu_component__WEBPACK_IMPORTED_MODULE_133__.HeaderLanguageMenuComponent, _layout_header_user_menu_component__WEBPACK_IMPORTED_MODULE_134__.HeaderUserMenuComponent, _layout_footer_component__WEBPACK_IMPORTED_MODULE_135__.FooterComponent, _layout_sidebar_component__WEBPACK_IMPORTED_MODULE_136__.SidebarComponent, _layout_sidebar_logo_component__WEBPACK_IMPORTED_MODULE_137__.SidebarLogoComponent, _layout_sidebar_user_panel_component__WEBPACK_IMPORTED_MODULE_138__.SidebarUserPanelComponent, _layout_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_139__.SidebarMenuComponent,
     // utils
     _utils_select_habilidade_dialog_single_selector_dialog_component__WEBPACK_IMPORTED_MODULE_140__.SingleSelectorDialogComponent],
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_142__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_143__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_143__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_144__.HttpClientModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_144__.HttpClientJsonpModule, ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_145__.ModalModule, ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_146__.BsDropdownModule, ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_147__.CollapseModule, ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_148__.TabsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _shared_service_proxies_service_proxy_module__WEBPACK_IMPORTED_MODULE_2__.ServiceProxyModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule, ngx_pagination__WEBPACK_IMPORTED_MODULE_149__.NgxPaginationModule]
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_143__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_144__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_144__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_145__.HttpClientModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_145__.HttpClientJsonpModule, ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_146__.ModalModule, ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_147__.BsDropdownModule, ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_148__.CollapseModule, ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_149__.TabsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _shared_service_proxies_service_proxy_module__WEBPACK_IMPORTED_MODULE_2__.ServiceProxyModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule, ngx_pagination__WEBPACK_IMPORTED_MODULE_150__.NgxPaginationModule]
   });
 })();
 
@@ -30032,6 +30039,38 @@ class UsersComponent extends shared_paged_listing_component_base__WEBPACK_IMPORT
     data: {
       animation: [(0,_shared_animations_routerTransition__WEBPACK_IMPORTED_MODULE_0__.appModuleAnimation)()]
     }
+  }))();
+}
+
+/***/ }),
+
+/***/ 64887:
+/*!*********************************************!*\
+  !*** ./src/app/utils/globalErrorHandler.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GlobalErrorHandler: () => (/* binding */ GlobalErrorHandler)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37580);
+
+class GlobalErrorHandler {
+  handleError(error) {
+    const chunkFailedMessage = /Loading chunk [\d]+ failed/;
+    if (chunkFailedMessage.test(error.message)) {
+      if (confirm("New version available. Load New Version?")) {
+        window.location.reload();
+      }
+    }
+  }
+  static #_ = (() => this.ɵfac = function GlobalErrorHandler_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || GlobalErrorHandler)();
+  })();
+  static #_2 = (() => this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+    token: GlobalErrorHandler,
+    factory: GlobalErrorHandler.ɵfac
   }))();
 }
 
