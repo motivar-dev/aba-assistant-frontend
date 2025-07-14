@@ -1,6 +1,6 @@
 {
   "remoteServiceBaseUrl": "http://localhost:44311",
-  "appBaseUrl": "http://localhost:4200",
+  "appBaseUrl": "http://motivar-dev.github.io/aba-assistant-frontend",
   "localeMappings": [
     {
       "from": "pt-BR",
