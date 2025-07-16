@@ -1,5 +1,5 @@
 {
-  "remoteServiceBaseUrl": "https://evolved-filly-aware.ngrok-free.app",
+  "remoteServiceBaseUrl": "http://evolved-filly-aware.ngrok-free.app",
   "appBaseUrl": "https://motivar-dev.github.io/aba-assistant-frontend",
   "localeMappings": [
     {
