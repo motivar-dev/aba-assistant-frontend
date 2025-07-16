@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkABAAssistant=self.webpackChunkABAAssistant||[]).push([[73052],{73052:(o,s,e)=>{e.r(s),e.d(s,{default:()=>u});const n=void 0,u=[[["pono\u0107","podne","ujutro","poslijepodne","nave\u010der","po no\u0107i"],n,n],n,["00:00","12:00",["04:00","12:00"],["12:00","18:00"],["18:00","21:00"],["21:00","04:00"]]]}}]);

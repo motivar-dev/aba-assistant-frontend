@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkABAAssistant=self.webpackChunkABAAssistant||[]).push([[28897],{28897:(t,s,n)=>{n.r(s),n.d(s,{default:()=>u});const u=[]}}]);
