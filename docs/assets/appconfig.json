@@ -1,6 +1,6 @@
 {
-  "remoteServiceBaseUrl": "http://localhost:44311",
-  "appBaseUrl": "http://motivar-dev.github.io/aba-assistant-frontend",
+  "remoteServiceBaseUrl": "https://evolved-filly-aware.ngrok-free.app",
+  "appBaseUrl": "https://motivar-dev.github.io/aba-assistant-frontend",
   "localeMappings": [
     {
       "from": "pt-BR",
