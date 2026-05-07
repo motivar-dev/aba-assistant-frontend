@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkABAAssistant=self.webpackChunkABAAssistant||[]).push([[13729],{13729:(d,n,t)=>{t.r(n),t.d(n,{default:()=>u});const s=void 0,u=[[["f\u0254\u014bli","\u014bdi","\u014bd\u0254","\u0263etr\u0254","fi\u1ebd","z\xe3"],s,s],s,[["04:00","05:00"],["05:00","12:00"],["12:00","14:00"],["14:00","18:00"],["18:00","21:00"],["21:00","04:00"]]]}}]);

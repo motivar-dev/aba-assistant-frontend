@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkABAAssistant=self.webpackChunkABAAssistant||[]).push([[10740],{10740:(t,a,n)=>{n.r(a),n.d(a,{default:()=>e});const s=void 0,e=[[["tengah malam","tengah hari","pagi","siang","sore","malam"],s,s],s,["00:00","12:00",["00:00","10:00"],["10:00","15:00"],["15:00","18:00"],["18:00","24:00"]]]}}]);
