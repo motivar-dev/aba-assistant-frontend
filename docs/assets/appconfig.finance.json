@@ -1,0 +1,18 @@
+{
+  "remoteServiceBaseUrl": "https://settling-panoramic-postnasal.ngrok-free.dev",
+  "appBaseUrl": "https://motivar-dev.github.io/aba-assistant-finance",
+  "localeMappings": [
+    {
+      "from": "pt-BR",
+      "to": "pt"
+    },
+    {
+      "from": "zh-CN",
+      "to": "zh"
+    },
+    {
+      "from": "he-IL",
+      "to": "he"
+    }
+  ]
+}
